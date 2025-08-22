@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>minstar21 — Researcher</title>
+  <meta name="description" content="AI/ML 연구자 개인 페이지 — 논문, 프로젝트, 이력 소개" />
+  <meta property="og:title" content="minstar21 — Researcher" />
+  <meta property="og:description" content="AI/ML 연구자 개인 페이지 — 논문, 프로젝트, 이력 소개" />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#0ea5e9" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>⭐</text></svg>">
+  <style>
+    :root{
+      --bg:#ffffff;--fg:#0f172a;--muted:#64748b;--border:#e2e8f0;--acc:#0ea5e9;--chip:#f1f5f9
+    }
+    @media (prefers-color-scheme: dark){
+      :root{--bg:#0b1220;--fg:#e2e8f0;--muted:#94a3b8;--border:#1f2a3a;--chip:#111827}
+    }
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--fg);font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,'Noto Sans KR',Arial,sans-serif}
+    a{color:var(--acc);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .container{max-width:1100px;margin:0 auto;padding:24px}
+    header{display:flex;gap:24px;align-items:center;border-bottom:1px solid var(--border);padding-bottom:20px}
+    .avatar{width:120px;height:120px;border-radius:16px;border:1px solid var(--border);object-fit:cover}
+    .tag{display:inline-block;background:var(--chip);color:var(--muted);border:1px solid var(--border);padding:4px 10px;border-radius:999px;font-size:12px;margin-right:8px}
+    nav{margin-top:10px;display:flex;flex-wrap:wrap;gap:10px}
+    nav a{padding:6px 10px;border-radius:8px;border:1px solid var(--border);background:var(--chip);color:var(--muted);font-size:14px}
+    main{display:grid;grid-template-columns:300px 1fr;gap:32px;margin-top:28px}
+    .sidebar{position:sticky;top:20px;height:fit-content;border:1px solid var(--border);border-radius:16px;padding:18px;background:linear-gradient(180deg,var(--chip),transparent)}
+    .name{font-size:28px;font-weight:800;margin:6px 0 4px}
+    .role{color:var(--muted)}
+    .chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
+    .chips span{background:var(--chip);border:1px solid var(--border);padding:4px 8px;border-radius:999px;font-size:12px;color:var(--muted)}
+    .social{display:grid;grid-template-columns:1fr;gap:10px;margin-top:14px}
+    .social a{display:flex;align-items:center;gap:10px;border:1px solid var(--border);padding:8px 10px;border-radius:10px;color:var(--fg)}
+    .social svg{width:18px;height:18px}
+    section{padding:24px;border:1px solid var(--border);border-radius:16px;margin-bottom:20px}
+    section h2{margin:0 0 8px;font-size:22px}
+    .pub li{margin:12px 0}
+    .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:16px}
+    .card{border:1px solid var(--border);border-radius:14px;padding:14px;background:var(--chip)}
+    .card h3{margin:0 0 8px;font-size:16px}
+    .card p{margin:0 0 10px;color:var(--muted)}
+    .footer{color:var(--muted);font-size:14px;text-align:center;margin:30px 0}
+    @media (max-width:900px){main{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <img class="avatar" src="https://github.com/minstar21.png" alt="minstar21 avatar" />
+      <div>
+        <div class="name">minstar21</div>
+        <div class="role">AI · 머신러닝 연구자 (Researcher)</div>
+        <nav>
+          <a href="#about">About</a>
+          <a href="#interests">Interests</a>
+          <a href="#publications">Publications</a>
+          <a href="#projects">Projects</a>
+          <a href="#experience">Experience</a>
+          <a href="#education">Education</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <aside class="sidebar" id="contact">
+        <div class="chips">
+          <span>Deep Learning</span><span>NLP</span><span>Recommendation</span><span>Vision</span>
+        </div>
+        <div class="social">
+          <a href="https://github.com/minstar21" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5A12 12 0 0 0 0 12.7c0 5.4 3.4 10 8.2 11.7.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.5-1.5-1.9-1.5-1.9-1.2-.9.1-.9.1-.9 1.3.1 2 . 1. 2. 2. 2. .8 1.7 2.8 1.2 3.5.9.1-.6.3-1 .6-1.2-2.7-.3-5.5-1.4-5.5-6.1 0-1.2.4-2.2 1-3.1-.1-.2-.5-1.5.1-3.2 0 0 .9-.3 3 .9.9-.3 1.8-.4 2.7-.4.9 0 1.8.1 2.7.4 2.1-1.2 3-.9 3-.9.6 1.7.2 3 .1 3.2.7.9 1 1.9 1 3.1 0 4.7-2.8 5.8-5.5 6.1.4.3.7.9.7 1.8v2.7c0 .3.2.7.8.6A12.2 12.2 0 0 0 24 12.7 12 12 0 0 0 12 .5z"/></svg>
+            GitHub
+          </a>
+          <a href="https://scholar.google.com" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2 1 9l11 7 9-5.7V17h2V9z"/></svg>
+            Google Scholar (링크 수정)
+          </a>
+          <a href="mailto:youremail@domain.com">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M2 6c0-1.1.9-2 2-2h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2zm2 0 8 5 8-5H4zm16 12V8l-8 5-8-5v10h16z"/></svg>
+            youremail@domain.com
+          </a>
+          <a href="https://www.linkedin.com" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.5 8h4V24h-4V8zm7.5 0h3.8v2.2h.1c.5-1 1.7-2.2 3.6-2.2 3.8 0 4.6 2.5 4.6 5.8V24h-4v-7.5c0-1.8 0-4-2.5-4s-2.8 2-2.8 3.9V24h-4V8z"/></svg>
+            LinkedIn (링크 수정)
+          </a>
+          <a href="/assets/CV.pdf" target="_blank">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8zM14 2v6h6"/></svg>
+            CV (추후 업로드)
+          </a>
+        </div>
+      </aside>
+
+      <div>
+        <section id="about">
+          <h2>About</h2>
+          <p>
+            안녕하세요. 인공지능 및 머신러닝 전반에 관심이 많은 연구자입니다. 본 페이지는 GitHub Pages로 배포되는 간단한 연구 소개 사이트이며,
+            연구 관심사·프로젝트·이력·연락처를 한 페이지에서 확인할 수 있도록 구성했습니다.
+          </p>
+        </section>
+
+        <section id="interests">
+          <h2>Research Interests</h2>
+          <ul>
+            <li>대규모 언어모델(LLM), 표현학습·파인튜닝·언러닝</li>
+            <li>추천시스템, 정보검색, RAG</li>
+            <li>컴퓨터비전·텍스트-이미지 생성모델</li>
+          </ul>
+        </section>
+
+        <section id="publications">
+          <h2>Publications</h2>
+          <p style="color:var(--muted)">※ 실제 논문 정보로 교체하세요. 아래는 템플릿 예시입니다.</p>
+          <ol class="pub">
+            <li><strong>논문 제목</strong> · 저자(들). 학회/저널, 연도. <a href="#">[PDF]</a> <a href="#">[코드]</a> <a href="#">[프로젝트]</a></li>
+            <li><strong>논문 제목</strong> · 저자(들). 학회/저널, 연도. <a href="#">[PDF]</a> <a href="#">[코드]</a></li>
+          </ol>
+        </section>
+
+        <section id="projects">
+          <h2>Selected Projects</h2>
+          <div class="grid">
+            <article class="card">
+              <h3>TIL</h3>
+              <p>학습 기록 및 실습 저장소.</p>
+              <a href="https://github.com/minstar21/TIL" target="_blank" rel="noopener">github.com/minstar21/TIL →</a>
+            </article>
+            <article class="card">
+              <h3>Recommenders</h3>
+              <p>추천시스템 베스트 프랙티스 (Fork).</p>
+              <a href="https://github.com/minstar21/recommenders" target="_blank" rel="noopener">github.com/minstar21/recommenders →</a>
+            </article>
+            <article class="card">
+              <h3>ML Project</h3>
+              <p>Kaggle/ML 실습 저장소 (Fork).</p>
+              <a href="https://github.com/minstar21/ml_project" target="_blank" rel="noopener">github.com/minstar21/ml_project →</a>
+            </article>
+            <article class="card">
+              <h3>gh-flow-practice</h3>
+              <p>GitHub Flow / PR 실습.</p>
+              <a href="https://github.com/minstar21/gh-flow-practice" target="_blank" rel="noopener">github.com/minstar21/gh-flow-practice →</a>
+            </article>
+          </div>
+          <p style="margin-top:10px">더 많은 프로젝트는 <a href="https://github.com/minstar21?tab=repositories" target="_blank" rel="noopener">GitHub Repositories</a>에서 확인하세요.</p>
+        </section>
+
+        <section id="experience">
+          <h2>Experience</h2>
+          <ul>
+            <li><strong>Researcher/Engineer</strong>, Company/Institute — YYYY.MM–YYYY.MM</li>
+            <li><strong>Teaching/TA</strong>, Course/Bootcamp — YYYY.MM–YYYY.MM</li>
+          </ul>
+        </section>
+
+        <section id="education">
+          <h2>Education</h2>
+          <ul>
+            <li><strong>Ph.D./M.S.</strong> in Computer Science (AI/ML), University — YYYY–YYYY</li>
+            <li><strong>B.S.</strong> in Major, University — YYYY–YYYY</li>
+          </ul>
+        </section>
+
+        <section id="service">
+          <h2>Service & Awards</h2>
+          <ul>
+            <li>Reviewer · Conference/Journal (연도)</li>
+            <li>Award/Scholarship · 기관 (연도)</li>
+          </ul>
+        </section>
+
+        <div class="footer">© <span id="y"></span> minstar21 · Last updated <span id="d"></span></div>
+      </div>
+    </main>
+  </div>
+  <script>
+    const d=new Date();
+    document.getElementById('y').textContent=d.getFullYear();
+    document.getElementById('d').textContent=d.toISOString().slice(0,10);
+  </script>
+</body>
+</html>
